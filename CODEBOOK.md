@@ -2,19 +2,19 @@
 ### Codebook
 
 * subject_ID
-    * integer. 1 to 30. Identifies each study subject.
+    * integer. 1 to 30. Identifies each study subject. From "subject_test" and "subject_train" tables
 * activity_ID
-    * integer. The activity subject performed at the time of the observation. 
-        1. WALKING 
-        2. WALKING_UPSTAIRS 
-        3. WALKING_DOWNSTAIRS 
-        4. SITTING 
-        5. STANDING 
-        6. LAYING
+    * integer. The activity subject performed at the time of the observation. "y_test" and "y_train" tables
+        (1) WALKING 
+        (2) WALKING_UPSTAIRS 
+        (3) WALKING_DOWNSTAIRS 
+        (4) SITTING 
+        (5) STANDING 
+        (6) LAYING
 * activity_name
-    * character. Descriptive name for the activity in which the subject was engaged at the time of the observation. 
+    * character. Descriptive name for the activity in which the subject was engaged at the time of the observation. Calculated based on "activity_ID"
 
-
+The following variable represent mean and st dev columns from the "X_test" and "X_train" tables
 * tBodyAcc-mean()-X
 * tBodyAcc-mean()-Y
 * tBodyAcc-mean()-X.1
